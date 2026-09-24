@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "linkedin-skills",
-  "version": "1.0.0",
-  "description": "Carries 11 skills, linkedin-comment-drafter, linkedin-content-planner, linkedin-employee-advocacy, linkedin-engager-analytics, linkedin-hook-extractor, linkedin-interviewer, linkedin-post-writer, linkedin-profile-optimizer, linkedin-reply-handler, linkedin-repurposer and linkedin-thread-monitor, from the open-source project sergebulaev/linkedin-skills, which AgentMesh did not write.",
+  "version": "1.0.1",
+  "description": "Carries 11 skills, LinkedIn comment drafter, LinkedIn content planner, LinkedIn employee advocacy, LinkedIn engager analytics, LinkedIn hook extractor, LinkedIn interviewer, LinkedIn post writer, LinkedIn profile optimizer, LinkedIn reply handler, LinkedIn repurposer and LinkedIn thread monitor, from the open-source project sergebulaev/linkedin-skills, which AgentMesh did not write.",
   "license": "MIT",
   "homepage": "https://github.com/sergebulaev/linkedin-skills",
   "repository": "https://github.com/AgentMesh-Community/linkedin-skills",
@@ -28,11 +28,11 @@
     "net.agentdoc.package": {
       "descriptor": {
         "path": "descriptor.json",
-        "sha256": "3fb2852fbea8a952c9a13229887c4d5f526cd040090a25f822cea292f0770d69"
+        "sha256": "6d89fae5bd9ecafc86c20fbfb0b429ec63fbf74f8565e07a1b7182f5b06950a1"
       },
       "install": {
         "path": "install.json",
-        "sha256": "a948f81a5d8acd033bf8e572f5dee3d7e7a0a764d761dec988db462cd2c397f5"
+        "sha256": "c47675b000341c2e814add1089d340c87c64d6b9112b9adad73675b335cac7d6"
       },
       "built": true,
       "draft": true,

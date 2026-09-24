@@ -1,11 +1,11 @@
 {
   "format": "agent-descriptor-v1",
-  "agent_version": "1.0.0",
-  "does": "Carries 11 skills, linkedin-comment-drafter, linkedin-content-planner, linkedin-employee-advocacy, linkedin-engager-analytics, linkedin-hook-extractor, linkedin-interviewer, linkedin-post-writer, linkedin-profile-optimizer, linkedin-reply-handler, linkedin-repurposer and linkedin-thread-monitor, from the open-source project sergebulaev/linkedin-skills, which AgentMesh did not write.",
+  "agent_version": "1.0.1",
+  "does": "Carries 11 skills, LinkedIn comment drafter, LinkedIn content planner, LinkedIn employee advocacy, LinkedIn engager analytics, LinkedIn hook extractor, LinkedIn interviewer, LinkedIn post writer, LinkedIn profile optimizer, LinkedIn reply handler, LinkedIn repurposer and LinkedIn thread monitor, from the open-source project sergebulaev/linkedin-skills, which AgentMesh did not write.",
   "offerings": [
     {
       "id": "linkedin-comment-drafter",
-      "name": "linkedin-comment-drafter",
+      "name": "LinkedIn comment drafter",
       "does": "Draft a LinkedIn comment on someone else's post from its URL, or reshare (repost) it to your feed with optional commentary.",
       "how": {
         "control": "model",
@@ -16,7 +16,7 @@
     },
     {
       "id": "linkedin-content-planner",
-      "name": "linkedin-content-planner",
+      "name": "LinkedIn content planner",
       "does": "Generate a 7-day LinkedIn content plan from a theme, audience, and pillars.",
       "how": {
         "control": "model",
@@ -27,7 +27,7 @@
     },
     {
       "id": "linkedin-employee-advocacy",
-      "name": "linkedin-employee-advocacy",
+      "name": "LinkedIn employee advocacy",
       "does": "Stand up and run a LinkedIn employee advocacy program for a marketing or sales team.",
       "how": {
         "control": "model",
@@ -38,7 +38,7 @@
     },
     {
       "id": "linkedin-engager-analytics",
-      "name": "linkedin-engager-analytics",
+      "name": "LinkedIn engager analytics",
       "does": "Pull the people who liked or commented on any LinkedIn post and segment them by ICP fit (peer / aspirational / prospect / other).",
       "how": {
         "control": "model",
@@ -49,7 +49,7 @@
     },
     {
       "id": "linkedin-hook-extractor",
-      "name": "linkedin-hook-extractor",
+      "name": "LinkedIn hook extractor",
       "does": "Reverse-engineer the hook formula from a viral LinkedIn post URL.",
       "how": {
         "control": "model",
@@ -60,7 +60,7 @@
     },
     {
       "id": "linkedin-interviewer",
-      "name": "linkedin-interviewer",
+      "name": "LinkedIn interviewer",
       "does": "Interview the user for the raw material their posts are made of.",
       "how": {
         "control": "model",
@@ -71,7 +71,7 @@
     },
     {
       "id": "linkedin-post-writer",
-      "name": "linkedin-post-writer",
+      "name": "LinkedIn post writer",
       "does": "Draft a new LinkedIn post from scratch using one of 20 2026 hook formulas (anaphora, R.I.P., time-anchor, curiosity-gap, contrarian, controlled A/B, false-binary, and more) plus a founders-edition angle library, picked by engagement goal (comments, reposts, likes, saves).",
       "how": {
         "control": "model",
@@ -82,7 +82,7 @@
     },
     {
       "id": "linkedin-profile-optimizer",
-      "name": "linkedin-profile-optimizer",
+      "name": "LinkedIn profile optimizer",
       "does": "Audit and rewrite a LinkedIn profile end-to-end for 2026: headline, About 7-step, Featured, banner, photo, Experience metrics, Skills, custom URL, recommendations.",
       "how": {
         "control": "model",
@@ -93,7 +93,7 @@
     },
     {
       "id": "linkedin-reply-handler",
-      "name": "linkedin-reply-handler",
+      "name": "LinkedIn reply handler",
       "does": "Draft a reply to one LinkedIn comment from its URL, or sweep a whole thread from just the post URL and draft a reply to every comment worth answering, in one batch.",
       "how": {
         "control": "model",
@@ -104,7 +104,7 @@
     },
     {
       "id": "linkedin-repurposer",
-      "name": "linkedin-repurposer",
+      "name": "LinkedIn repurposer",
       "does": "Repurpose existing content into a native LinkedIn post.",
       "how": {
         "control": "model",
@@ -115,7 +115,7 @@
     },
     {
       "id": "linkedin-thread-monitor",
-      "name": "linkedin-thread-monitor",
+      "name": "LinkedIn thread monitor",
       "does": "Track which of your LinkedIn comments earned author replies.",
       "how": {
         "control": "model",
@@ -139,5 +139,19 @@
   ],
   "shape": {
     "kind": "plugin-on-harness"
-  }
+  },
+  "systems": [
+    {
+      "name": "apify-token",
+      "access": "read",
+      "needs": "It is an API key used to authenticate with Apify for fetching LinkedIn post and comment data",
+      "leaves": true
+    },
+    {
+      "name": "publora-api-key",
+      "access": "read",
+      "needs": "It is an API key used to authenticate with Publora for publishing or scheduling posts and comments directly to LinkedIn",
+      "leaves": true
+    }
+  ]
 }
