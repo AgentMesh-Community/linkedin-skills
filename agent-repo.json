@@ -1,0 +1,6 @@
+{
+  "format": "agent-repository-v1",
+  "package": "package",
+  "agentdoc": "agentdoc.json",
+  "source": "source"
+}
