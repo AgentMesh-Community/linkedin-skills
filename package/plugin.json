@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "linkedin-skills",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Carries 11 skills, LinkedIn comment drafter, LinkedIn content planner, LinkedIn employee advocacy, LinkedIn engager analytics, LinkedIn hook extractor, LinkedIn interviewer, LinkedIn post writer, LinkedIn profile optimizer, LinkedIn reply handler, LinkedIn repurposer and LinkedIn thread monitor, from the open-source project sergebulaev/linkedin-skills, which AgentMesh did not write.",
   "license": "MIT",
   "homepage": "https://github.com/sergebulaev/linkedin-skills",
@@ -28,11 +28,11 @@
     "net.agentdoc.package": {
       "descriptor": {
         "path": "descriptor.json",
-        "sha256": "6d89fae5bd9ecafc86c20fbfb0b429ec63fbf74f8565e07a1b7182f5b06950a1"
+        "sha256": "8a919c2f1f8ec6466b74c73953cb4a842bf0031adc495d5740473490d4c41f12"
       },
       "install": {
         "path": "install.json",
-        "sha256": "c47675b000341c2e814add1089d340c87c64d6b9112b9adad73675b335cac7d6"
+        "sha256": "a948f81a5d8acd033bf8e572f5dee3d7e7a0a764d761dec988db462cd2c397f5"
       },
       "built": true,
       "draft": true,

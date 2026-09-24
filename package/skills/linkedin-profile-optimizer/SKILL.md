@@ -35,7 +35,7 @@ Its files were placed in that folder like this:
 
 ## What it needs from outside
 
-- This skill needs PUBLORA_API_KEY. It is an API key used to authenticate with Publora for publishing or scheduling posts and comments directly to LinkedIn. The agent's owner places it in the variable PUBLORA_API_KEY at install; never print it, and check it only with a shell test such as test -n "$PUBLORA_API_KEY". When it is not set, do not stop. Do the job without it: still work, leaving out the part that needs it. Say plainly in your reply that the full version needs PUBLORA_API_KEY.
+- This skill can use PUBLORA_API_KEY. It is an API key used to authenticate with Publora for publishing or scheduling posts and comments directly to LinkedIn. This agent does not have it: its owner is not asked for it at install. Do the job without it: still work, leaving out the part that needs it. Say plainly in your reply that the full version needs PUBLORA_API_KEY.
 
 ## Rules
 

@@ -1,6 +1,6 @@
 {
   "format": "agent-descriptor-v1",
-  "agent_version": "1.0.1",
+  "agent_version": "1.0.2",
   "does": "Carries 11 skills, LinkedIn comment drafter, LinkedIn content planner, LinkedIn employee advocacy, LinkedIn engager analytics, LinkedIn hook extractor, LinkedIn interviewer, LinkedIn post writer, LinkedIn profile optimizer, LinkedIn reply handler, LinkedIn repurposer and LinkedIn thread monitor, from the open-source project sergebulaev/linkedin-skills, which AgentMesh did not write.",
   "offerings": [
     {
@@ -139,19 +139,5 @@
   ],
   "shape": {
     "kind": "plugin-on-harness"
-  },
-  "systems": [
-    {
-      "name": "apify-token",
-      "access": "read",
-      "needs": "It is an API key used to authenticate with Apify for fetching LinkedIn post and comment data",
-      "leaves": true
-    },
-    {
-      "name": "publora-api-key",
-      "access": "read",
-      "needs": "It is an API key used to authenticate with Publora for publishing or scheduling posts and comments directly to LinkedIn",
-      "leaves": true
-    }
-  ]
+  }
 }

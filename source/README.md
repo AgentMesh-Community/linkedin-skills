@@ -18,8 +18,8 @@ Carries 11 skills, LinkedIn comment drafter, LinkedIn content planner, LinkedIn 
 
 ## What it needs
 
-- APIFY_TOKEN, a key its owner gives at install, for the skills LinkedIn comment drafter, LinkedIn engager analytics, LinkedIn hook extractor, LinkedIn reply handler and LinkedIn thread monitor. It is an API key used to authenticate with Apify for fetching LinkedIn post and comment data. It costs money to use. Without it they ask the user to paste the post text and (optionally) top comments.
-- PUBLORA_API_KEY, a key its owner gives at install. It is an API key used to authenticate with Publora for publishing or scheduling posts and comments directly to LinkedIn. Without it, it will still work, leaving out the part that needs it.
+- APIFY_TOKEN, a key, for the skills LinkedIn comment drafter, LinkedIn engager analytics, LinkedIn hook extractor, LinkedIn reply handler and LinkedIn thread monitor. It is an API key used to authenticate with Apify for fetching LinkedIn post and comment data. It costs money to use. Optional: without it, they ask the user to paste the post text and (optionally) top comments.
+- PUBLORA_API_KEY, a key. It is an API key used to authenticate with Publora for publishing or scheduling posts and comments directly to LinkedIn. Optional: without it, it will still work, leaving out the part that needs it.
 - The Python module lib, which this agent cannot run, for the skills LinkedIn comment drafter, LinkedIn engager analytics, LinkedIn hook extractor, LinkedIn reply handler and LinkedIn thread monitor. It provides helper functions and API clients for URL parsing, Apify, Publora, Pixfaro, and drafting approval cards. Without it they ask the user to paste the post text and (optionally) top comments.
 - The Python module lib, which this agent cannot run, for the skills LinkedIn post writer and LinkedIn repurposer. It provides helper functions and API clients for URL parsing, Apify, Publora, Pixfaro, and drafting approval cards. Without it they still work, leaving out the part that needs it.
 
@@ -29,7 +29,7 @@ The linkedin-skills authors wrote it and publish it at https://github.com/sergeb
 
 ## Version
 
-This agent's own version is 1.0.1; it counts changes to this agent. The upstream version it was made from is commit 5c6192d.
+This agent's own version is 1.0.2; it counts changes to this agent. The upstream version it was made from is commit 5c6192d.
 
 ## Licence
 

@@ -2,22 +2,22 @@
   "agentdoc": "v1",
   "package": {
     "name": "linkedin-skills",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
   "assembled_by": "tools/assemble-agentdoc.mjs --for-repository; assembled from the package, not signed",
   "sources": [
     {
       "id": "descriptor",
       "kind": "agent-descriptor",
-      "digest": "6d89fae5bd9ecafc86c20fbfb0b429ec63fbf74f8565e07a1b7182f5b06950a1",
-      "agent_version": "1.0.1",
+      "digest": "8a919c2f1f8ec6466b74c73953cb4a842bf0031adc495d5740473490d4c41f12",
+      "agent_version": "1.0.2",
       "signature": "unsigned"
     },
     {
       "id": "package",
       "kind": "plugin-package",
-      "digest": "1b27ea663f496eb09cac068366da2040aaec9c5beb7c7ffc218b24234304a112",
-      "agent_version": "1.0.1",
+      "digest": "6881cbea5bd5baa96b1557b1604c79fc1aab4edff7aa04e2f98dc4c3c8129e9a",
+      "agent_version": "1.0.2",
       "signature": "unsigned"
     }
   ],
@@ -109,25 +109,6 @@
         }
       ]
     },
-    "reaches": {
-      "from": [
-        "descriptor"
-      ],
-      "systems": [
-        {
-          "name": "apify-token",
-          "access": "read",
-          "needs": "It is an API key used to authenticate with Apify for fetching LinkedIn post and comment data",
-          "leaves": true
-        },
-        {
-          "name": "publora-api-key",
-          "access": "read",
-          "needs": "It is an API key used to authenticate with Publora for publishing or scheduling posts and comments directly to LinkedIn",
-          "leaves": true
-        }
-      ]
-    },
     "refuses": {
       "from": [
         "descriptor"
@@ -158,7 +139,7 @@
     "asked",
     "told",
     "access",
-    "runs_against",
+    "reaches",
     "handling",
     "handling.retention",
     "standing"

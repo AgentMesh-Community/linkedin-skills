@@ -8,30 +8,8 @@
   ],
   "binaries": [],
   "dependencies": [],
-  "systems": [
-    {
-      "name": "apify-token",
-      "kind": "service",
-      "credential": "apify-token",
-      "env": "APIFY_TOKEN",
-      "spends": {
-        "unit": "calls"
-      }
-    },
-    {
-      "name": "publora-api-key",
-      "kind": "service",
-      "credential": "publora-api-key",
-      "env": "PUBLORA_API_KEY"
-    }
-  ],
-  "ceilings": [
-    {
-      "system": "apify-token",
-      "per": "task",
-      "enforced_by": "runtime"
-    }
-  ],
+  "systems": [],
+  "ceilings": [],
   "directories": [
     {
       "name": "records",
